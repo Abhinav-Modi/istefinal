@@ -114,9 +114,21 @@ const Footer = () => {
 						<div className="footer-mobile-right">
 							<h1>Follow Us</h1>
 							<div className="socials">
-								<BsFacebook className="social-icon" />
-								<BsInstagram className="social-icon" />
-								<BsLinkedin className="social-icon" />
+								<a href="https://www.facebook.com/istemanipal" target="_blank">
+									<BsFacebook className="social-icon" />
+								</a>
+								<a
+									href="https://instagram.com/iste_manipal?igshid=YmMyMTA2M2Y="
+									target="_blank"
+								>
+									<BsInstagram className="social-icon" />
+								</a>
+								<a
+									href="https://www.linkedin.com/company/iste-manipal/"
+									target="_blank"
+								>
+									<BsLinkedin className="social-icon" />
+								</a>
 							</div>
 						</div>
 					</div>
