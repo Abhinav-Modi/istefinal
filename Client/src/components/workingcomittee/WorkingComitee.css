@@ -1,0 +1,22 @@
+.members-list-card {
+	text-align: center;
+	background-color: #1d1a27;
+	padding: 4rem 0rem;
+	border-radius: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 1rem;
+}
+h2 {
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
+@media (max-width: 768px) {
+	.members-list-card {
+		grid-template-columns: 1fr 1fr;
+	}
+	.name h2 {
+		font-size: 1.2rem;
+	}
+}

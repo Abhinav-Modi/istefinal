@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*custom scrollbar*/
+
+::-webkit-scrollbar {
+	width: 0.4em;
+}
+
+::-webkit-scrollbar-track {
+	background: #0c1014;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #3c45a8;
+	border-radius: 0.5em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #2f3683;
+}
+
+@supports (scrollbar-color: red blue) {
+	* {
+		scrollbar-color: #5865f2 #0c1014;
+		scrollbar-width: thick;
+	}
+}
+
+/*custom scrollbar*/
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body {
+	background: rgb(2, 3, 4);
+	background: -moz-linear-gradient(
+		0deg,
+		rgba(2, 3, 4, 1) 0%,
+		rgba(24, 34, 48, 1) 100%
+	);
+	background: -webkit-linear-gradient(
+		0deg,
+		rgba(2, 3, 4, 1) 0%,
+		rgba(24, 34, 48, 1) 100%
+	);
+	background: linear-gradient(
+		0deg,
+		rgba(2, 3, 4, 1) 0%,
+		rgba(24, 34, 48, 1) 100%
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020304",endColorstr="#182230",GradientType=1);
+	color: #ffffff;
+	min-height: 100vh;
+	font-family: "Manrope", sans-serif;
+	max-width: 80vw;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+.gradient-text {
+	background: linear-gradient(
+		262.63deg,
+		#5656fb -9.37%,
+		#8a53d6 20.21%,
+		#b450b7 48.2%,
+		#d54da0 78.64%,
+		#f84a86 107.49%
+	);
+
+	width: fit-content;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	background-size: 180%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	white-space: nowrap;
+	animation: text-animate 3s linear infinite alternate;
+}
+.gradient-bg {
+	background: linear-gradient(
+		90deg,
+		#fd4982 0%,
+		#e84b92 12.57%,
+		#ba4fb2 41.7%,
+		#a950bf 56.38%,
+		#9352cf 69.26%,
+		#5b55f7 95.97%,
+		#5256fe 100.02%
+	);
+	border-radius: 2.5rem 0rem 2.5rem 0rem;
+	padding: 0rem 1.2rem;
+	width: fit-content;
+	background-size: 200%;
+	animation: text-animate 3s linear infinite alternate;
+}
+@keyframes text-animate {
+	0% {
+		background-position: left;
+	}
+
+	100% {
+		background-position: right;
+	}
+}
+#text-white {
+	color: #ffffff;
+}
+/* @media only screen and (max-width: 768px) {
+	.aos-animate {
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+} */
+.card-skeleton {
+	background-color: #1d1a27;
+	border-radius: 3.2rem;
+	padding: 2rem 2rem;
+	opacity: 0.8;
+	width: auto;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+}
+.card-skeleton .skeleton-img {
+	border-radius: 100rem;
+	width: 100%;
+	margin-top: 1.5rem;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+.card-skeleton .skeleton-text {
+	margin: 1rem 0rem;
+}

@@ -1,0 +1,40 @@
+{
+	"name": "iste_backend",
+	"version": "1.0.0",
+	"description": "For purpose of ISTE website and admin portal",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "nodemon index.js",
+		"client": "cd Client && npm start",
+		"start": "concurrently \"npm run dev\" \"npm run client\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ankitmishra1201/iste_backend.git"
+	},
+	"author": "Ankit Mishra",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ankitmishra1201/iste_backend/issues"
+	},
+	"homepage": "https://github.com/ankitmishra1201/iste_backend#readme",
+	"dependencies": {
+		"@adminjs/express": "^5.0.0",
+		"@adminjs/mongoose": "^3.0.0",
+		"adminjs": "^6.4.1",
+		"axios": "^1.1.3",
+		"build": "^0.1.4",
+		"concurrently": "^7.4.0",
+		"cors": "^2.8.5",
+		"express": "^4.18.1",
+		"express-api-cache": "^1.0.4",
+		"http-proxy-middleware": "^2.0.6",
+		"mongoose": "^6.6.1",
+		"nodemailer": "^6.8.0",
+		"nodemon": "^2.0.20",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-router-hash-link": "^2.4.3"
+	}
+}

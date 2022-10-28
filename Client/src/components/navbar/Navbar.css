@@ -1,0 +1,183 @@
+.navbar {
+	width: 100vw;
+	margin: 0 auto;
+	height: 8.25em;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 1rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: transparent;
+	z-index: 2;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+}
+
+.navbar.active {
+	background-image: radial-gradient(
+		circle 1500px at 2.7% 11%,
+		#3c3c5f 9.37%,
+		#4c3869 20.21%,
+		#522553 98.2%
+	);
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	z-index: 2;
+}
+.navbar ul,
+.navbar li {
+	list-style: none;
+	text-decoration: none;
+}
+
+.nav-menu {
+	display: flex;
+}
+.navbar img {
+	width: 90px;
+}
+
+.nav-item {
+	padding: 0rem 3rem;
+	font-size: 1.5rem;
+}
+.nav-logo {
+	margin-right: auto;
+	width: 20%;
+}
+
+.hamburger {
+	display: none;
+}
+
+.icon-hamburger {
+	font-size: 4rem;
+	padding: 0rem 1rem;
+}
+.nav-item {
+	text-decoration: none;
+	color: #ffffff;
+	padding: 0.25rem 1.2rem;
+	margin: 1rem;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+}
+.navbar > ul > .nav-item > .nav-links {
+	color: #ffffff;
+	list-style: none;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 2rem;
+}
+
+@media (hover) {
+	.navbar > ul > .nav-item > .nav-links:hover {
+		background: linear-gradient(
+			45deg,
+			#fd4982 0%,
+			#e84b92 50.57%,
+			#a950bf 73.37%,
+			#9352cf 80.25%,
+			#5b55f7 95.95%,
+			#5256fe 100%
+		);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+		transition: all 0.3s ease;
+	}
+	.nav-links:active {
+		background: linear-gradient(
+			45deg,
+			#fd4982 0%,
+			#e84b92 50.57%,
+			#a950bf 73.37%,
+			#9352cf 80.25%,
+			#5b55f7 95.95%,
+			#5256fe 100%
+		);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+	}
+}
+
+@media screen and (max-width: 968px) {
+	.nav-menu {
+		position: fixed;
+		top: 0;
+		right: -100%;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+		width: 60%;
+		background-image: radial-gradient(
+			circle 1500px at 2.7% 11%,
+			#3c3c5f 9.37%,
+			#4c3869 20.21%,
+			#522553 98.2%
+		);
+		text-align: center;
+		transition: all 0.3s ease;
+		z-index: 0;
+	}
+	.navbar img {
+		width: 80%;
+	}
+
+	.nav-menu.active {
+		top: 0;
+		right: 0;
+	}
+
+	.nav-item {
+		margin: 1.5rem;
+		font-size: 1.8rem;
+		justify-content: center;
+	}
+
+	.hamburger {
+		display: flex;
+	}
+
+	.icon-hamburger {
+		z-index: 99999;
+	}
+	.nav-logo {
+		margin-right: auto;
+		max-width: 20%;
+		padding-top: 4rem;
+	}
+}
+@media screen and (max-width: 750px) {
+	.nav-logo {
+		margin-right: auto;
+		max-width: 30%;
+		padding-top: 3rem;
+	}
+}
+.stop-scrolling {
+	height: 100%;
+	overflow: hidden;
+}
+.nav-item {
+	text-decoration: none;
+	color: #ffffff;
+	padding: 0.25rem 1.2rem;
+	margin: 1rem;
+	transition: all 0.3s ease;
+}
+.links:active {
+	border-bottom: 1pc solid var(--primary);
+}

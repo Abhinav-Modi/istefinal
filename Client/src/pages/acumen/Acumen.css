@@ -1,0 +1,203 @@
+.acumen-landing {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 85vh;
+	margin-top: 10rem;
+}
+.acumen-img {
+	width: 65%;
+}
+
+.acumen-right {
+	text-align: right;
+	margin-top: 6rem;
+}
+.acumen-right h1 {
+	font-size: 9.6rem;
+	background: linear-gradient(
+		262.63deg,
+		#235876 -9.37%,
+		#4ebc96 45.4%,
+		#aeedba 107.49%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	background-size: 300%;
+	animation: text-animate 3s linear infinite alternate;
+}
+.acumen-desc1 {
+	font-size: 2rem;
+	opacity: 0.8;
+	letter-spacing: 0.085em;
+	line-height: 2.7rem;
+}
+.acumen-desc2 {
+	margin-top: 4rem;
+	font-size: 1.6rem;
+	opacity: 0.8;
+	letter-spacing: 0.085em;
+	line-height: 2.6rem;
+}
+.acumen-cards-row {
+	height: max-content;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.acumen-card {
+	border-top: 4px solid;
+	border-image: linear-gradient(
+		90deg,
+		#fd4982 0%,
+		#e84b92 12.57%,
+		#ba4fb2 41.69%,
+		#a950bf 56.37%,
+		#9352cf 69.25%,
+		#5b55f7 95.95%,
+		#5256fe 100%
+	);
+	border-image-slice: 1;
+	position: relative;
+	z-index: 1;
+	margin-left: 3rem;
+	width: 80%;
+	padding: 3rem;
+	margin: 0 auto;
+	height: fit-content;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	text-align: center;
+}
+.acumen-card h2 {
+	font-size: 2.4rem;
+	font-weight: 700;
+	font-size: 2.4rem;
+	line-height: 3.3rem;
+}
+.acumen-card p {
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	margin-top: 2rem;
+	letter-spacing: 0.03em;
+}
+
+.acumen-events-section h1 {
+	text-align: center;
+	margin-bottom: 8rem;
+	font-size: 2.4rem;
+}
+/* media query */
+@media screen and (max-width: 1300px) {
+	.acumen-cards-row {
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.acumen-landing .acumen-right h1 {
+		font-size: 7rem;
+	}
+	.acumen-landing .acumen-right p {
+		font-size: 1.5rem;
+	}
+	.acumen-right {
+		width: 80vw;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 380px) {
+	.acumen-landing .acumen-right h1 {
+		font-size: 6rem;
+	}
+	.acumen-landing .acumen-right p {
+		font-size: 1.2rem;
+	}
+	.acumen-right {
+		width: 80vw;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 380px) {
+	.acumen-landing .acumen-right h1 {
+		font-size: 5rem;
+	}
+}
+@media screen and (max-width: 768px) {
+	.acumen-landing {
+		position: relative;
+	}
+	.acumen-left {
+		position: absolute;
+		bottom: 5rem;
+		left: 69%;
+		transform: translateX(-50%);
+		width: 30rem;
+	}
+	.acumen-cards-row {
+		grid-template-columns: 1fr;
+		row-gap: 2rem;
+	}
+}
+.acumen {
+	overflow: none;
+}
+@media (hover: hover) {
+	.acumen-card:hover {
+		transform: scale(1.1);
+		filter: drop-shadow(0 0rem 15rem #a950bf);
+		transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+	}
+	.acumen-card:hover::after {
+		transform: scaleY(0.96);
+		transform-origin: top;
+		transition: all 0.3s ease-in-out;
+		filter: drop-shadow(0 0rem 15rem #a950bf);
+	}
+	.acumen-card:active {
+		transform: scaleY(0.96);
+		filter: drop-shadow(0 0rem 8rem #a950bf);
+		transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+	}
+	.acumen-card::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(
+			90deg,
+			#fd49821c 0%,
+			#e84b9228 12.57%,
+			#ba4fb32d 41.69%,
+			#a950bf1f 56.37%,
+			#9352cf25 69.25%,
+			#5a55f723 95.95%,
+			#5255fe21 100%
+		);
+
+		top: 0;
+		left: 0;
+		z-index: -1;
+		transform: scaleY(0);
+		transform-origin: top;
+		filter: drop-shadow(0 0rem 8rem #a950bf);
+		transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+	}
+}
