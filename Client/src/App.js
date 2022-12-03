@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
 	BrowserRouter as Router,
 	Routes,
@@ -17,10 +17,10 @@ import WorkingComittee from "./components/workingcomittee/WorkingComittee";
 import ScrollToTop from "./components/ScrollToTop";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
-
+import BarLoader from "react-spinners/BarLoader";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+
 const App = () => {
 	useEffect(() => {
 		Aos.init({ duration: 1500 });
@@ -32,6 +32,7 @@ const App = () => {
 	// 	}
 	// };
 	// disableAos();
+
 	return (
 		<>
 			<SkeletonTheme baseColor="#313131" highlightColor="#525252">

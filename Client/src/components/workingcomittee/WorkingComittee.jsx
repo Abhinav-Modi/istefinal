@@ -27,14 +27,12 @@ const WorkingComittee = () => {
 			<section className="members-container">
 				<Membersnav />
 				<div className="mancomm">
-					<h1>List of mancomm</h1>
+					<h1>List of Working Committee</h1>
 				</div>
 				<div className="members-list">
 					<div className="members-list-card">
-					{myrepo.map((WC)=>{
-							return(
-								<MembersName name={WC.name} />
-							)
+						{myrepo.map((WC) => {
+							return <MembersName name={WC.name} />;
 						})}
 						{/* <MembersName name="FirstName LastName WC" />
 						<MembersName name="FirstName LastName WC" />

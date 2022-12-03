@@ -115,19 +115,19 @@ const Footer = () => {
 							<h1>Follow Us</h1>
 							<div className="socials">
 								<a href="https://www.facebook.com/istemanipal" target="_blank">
-									<BsFacebook className="social-icon" />
+									<BsFacebook className="social-icon" id="facebook" />
 								</a>
 								<a
 									href="https://instagram.com/iste_manipal?igshid=YmMyMTA2M2Y="
 									target="_blank"
 								>
-									<BsInstagram className="social-icon" />
+									<BsInstagram className="social-icon" id="insta" />
 								</a>
 								<a
 									href="https://www.linkedin.com/company/iste-manipal/"
 									target="_blank"
 								>
-									<BsLinkedin className="social-icon" />
+									<BsLinkedin className="social-icon" id="linkedin" />
 								</a>
 							</div>
 						</div>

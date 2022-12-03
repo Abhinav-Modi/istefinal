@@ -2,32 +2,32 @@ import React from "react";
 import "./Acumen.css";
 import AcumenImg from "../../assets/acumen.svg";
 import AcumenCard from "../../components/acumencard/AcumenCard";
-import { useEffect,useState } from "react";
-import axios from 'axios'
+import { useEffect, useState } from "react";
+import axios from "axios";
 const Acumen = () => {
-	const [myrepo,SetRepo]=useState([])
-	const url="/acumen/getallacumen"
+	const [myrepo, SetRepo] = useState([]);
+	const url = "/acumen/getallacumen";
 
-	useEffect(()=>{
-		const getrepo=async()=>{
-		try{
-			const response=await axios.get(url);
-			console.log(response)
-			const data=response.data.body;
-			SetRepo(data)
-		}catch(error){
-			console.log(error)
-		}
-	};
-	getrepo();
-	},[url])
+	useEffect(() => {
+		const getrepo = async () => {
+			try {
+				const response = await axios.get(url);
+				console.log(response);
+				const data = response.data.body;
+				SetRepo(data);
+			} catch (error) {
+				console.log(error);
+			}
+		};
+		getrepo();
+	}, [url]);
 	return (
 		<>
 			<div className="acumen">
 				<section className="acumen-center">
 					<div className="acumen-landing">
 						<div data-aos="zoom-in" className="acumen-left">
-							<img src={AcumenImg} alt="" className="acumen-img" />
+							<img src={AcumenImg} alt="" className="acumen-img" id="ac-img" />
 						</div>
 						<div data-aos="fade-left" className="acumen-right">
 							<h1>ACUMEN</h1>
@@ -47,19 +47,18 @@ const Acumen = () => {
 				<section className="acumen-events-section">
 					<h1>Events</h1>
 					<div className="acumen-cards-row">
-						
-							{myrepo.map((acumen)=>{
-						return(
-							<div data-aos="fade-left">
-							<AcumenCard 
-							key={acumen._id}
-							title={acumen.event_name}
-							desc={acumen.event_description}
-							/>
-							</div>
-						)
-					})}
-						
+						{myrepo.map((acumen) => {
+							return (
+								<div data-aos="fade-left">
+									<AcumenCard
+										key={acumen._id}
+										title={acumen.event_name}
+										desc={acumen.event_description}
+									/>
+								</div>
+							);
+						})}
+
 						{/* <div data-aos="fade-left">
 							<AcumenCard
 								title="AIB"

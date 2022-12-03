@@ -125,9 +125,10 @@ const Home = () => {
 								What do we do?
 							</h2>
 							<p data-aos="fade-left">
-								ISTE Manipal is one of the branches of the nationwide Indian
-								Society of Technical Education. It is Manipal's most reputed and
-								esteemed multi-disciplinary technical club.
+								We aim to bring together students with a keen enthusiasm in tech
+								fields, and nurture skills in several domains by organising
+								events, workshops and providing opportunities and guidance to
+								learn and grow in the world of tech.
 							</p>
 						</div>
 					</div>

@@ -1,7 +1,7 @@
 .acumen-landing {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	height: 85vh;
+	min-height: 50vh;
 	margin-top: 10rem;
 }
 .acumen-img {
@@ -131,17 +131,25 @@
 @media screen and (max-width: 768px) {
 	.acumen-landing {
 		position: relative;
+		left: 20rem;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-auto-flow: column;
+		text-align: center;
 	}
-	.acumen-left {
-		position: absolute;
-		bottom: 5rem;
-		left: 69%;
-		transform: translateX(-50%);
-		width: 30rem;
-	}
+
 	.acumen-cards-row {
 		grid-template-columns: 1fr;
 		row-gap: 2rem;
+	}
+	.acumen-img {
+		display: none;
+	}
+}
+@media screen and (max-width: 724px) {
+	.acumen-landing {
+		position: relative;
+		left: 0rem;
 	}
 }
 .acumen {

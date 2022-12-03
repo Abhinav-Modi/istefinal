@@ -304,7 +304,7 @@
 
 	.center-card {
 		position: relative;
-		left: 50%;
+		left: 65%;
 	}
 }
 .banner-right {
@@ -349,6 +349,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
+	will-change: transform;
 	background: linear-gradient(180deg, #1e1e1e 30%, #262746 100.02%);
 	transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
 	display: flex;
@@ -360,14 +361,17 @@
 	position: absolute;
 	font-size: 10em;
 	color: white;
+	will-change: transform;
 	transform: translateZ(50px);
 }
 .cube div span h2:nth-child(1) {
+	will-change: transform;
 	transform: translateZ(0) translateY(20px);
 	color: rgba(0, 0, 0, 0.1);
 	filter: blur(2px);
 }
 .top {
+	will-change: transform;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -383,6 +387,7 @@
 	left: 0;
 	width: 300px;
 	height: 300px;
+	will-change: transform;
 	background: linear-gradient(90deg, #5256fe 100.02%);
 	transform: translateZ(-380px);
 	filter: blur(20px);
@@ -393,6 +398,7 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	will-change: transform;
 	transform: translate(-50%, -50%);
 }
 @media screen and (max-width: 450px) {

@@ -4,10 +4,9 @@ import CountUp from "react-countup";
 import Timer from "../../components/timer/Timer";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import Abhinav from "../../assets/board/abhinav.jpeg";
-import Aib1 from "../../assets/aib1.jpg";
-import Aib2 from "../../assets/aib2.jpg";
-import Ts from "../../assets/ts.jpg";
+
+import Aib1 from "../../assets/aib1.jpeg";
+import Ts from "../../assets/ts.jpeg";
 import Ts2 from "../../assets/ts2.jpg";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -130,13 +129,10 @@ const Events = () => {
 					className="carousel-cat"
 				>
 					<div className="carousel-img">
-						<img src={Aib1} alt="" />
-					</div>
-					<div className="carousel-img">
-						<img src={Aib1} alt="" />
-					</div>
-					<div className="carousel-img">
 						<img src={Ts} alt="" />
+					</div>
+					<div className="carousel-img">
+						<img src={Aib1} alt="" />
 					</div>
 					<div className="carousel-img">
 						<img src={Ts2} alt="" />

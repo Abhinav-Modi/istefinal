@@ -24,20 +24,17 @@ const Mancomm = () => {
 		getrepo();
 	}, [url]);
 
-
 	return (
 		<>
 			<section className="members-container">
 				<Membersnav />
 				<div className="mancomm">
-					<h1>List of mancomm</h1>
+					<h1>List of Mancomm</h1>
 				</div>
 				<div className="members-list">
 					<div className="members-list-card">
-						{myrepo.map((MC)=>{
-							return(
-								<MembersName name={MC.name} />
-							)
+						{myrepo.map((MC) => {
+							return <MembersName name={MC.name} />;
 						})}
 						{/* <MembersName name="FirstName LastName" />
 						<MembersName name="FirstName LastName" />
