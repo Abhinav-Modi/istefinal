@@ -17,7 +17,7 @@ import WorkingComittee from "./components/workingcomittee/WorkingComittee";
 import ScrollToTop from "./components/ScrollToTop";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import BarLoader from "react-spinners/BarLoader";
+
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
